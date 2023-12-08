@@ -1,0 +1,149 @@
+
+.carrossel__titulo {
+    background: var(--cor-branco);
+    color: var(--cor-amarelo);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    display: flex;
+    background: var(--cor-branco);
+    border-radius: 10px;
+    margin: 1em;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.esquerdo__titulo, .esquerdo__titulo2 {
+    font-weight: 700;
+    color: var(--cor-amarelo);
+}
+
+.esquerdo__titulo2 {
+    margin-top: 0.5em;
+}
+
+.esquerdo__nome-livro {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-azul-escuro);
+    margin: 0.5em 0;
+}
+
+.esquerdo__texto {
+    font-size: 14px;
+    color: var(--cor-preto);
+}
+
+.esquerdo__card {
+    width: 162px;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 1em 1em;
+    align-items: center;
+}
+
+.botoes__lista {
+    display: flex;
+    align-items: center;
+}
+
+.botoes__item {
+    padding: 0 1em;
+}
+
+.botoes__ancora {
+    background: var(--cor-amarelo);
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: 700;
+    padding: 1em 1.7em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .carrossel__titulo {
+        padding: 2em 0 1em 0;
+    }
+
+
+    .container__carrossel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15vw 2em 15vw;
+        gap: 3em;
+    }
+
+    .card {
+        margin-top: 8em;
+        width: 60%;
+    }
+
+    .esquerdo__titulo, .esquerdo__titulo2 {
+        font-size: 32px;
+    }
+
+    .esquerdo__texto {
+        font-size: 16px;
+    }
+
+    .esquerdo__nome-livro {
+        margin: 1.5em 0;
+    }
+
+}
